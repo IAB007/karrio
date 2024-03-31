@@ -1,92 +1,60 @@
 django-debug-toolbar
+Django==4.2.11
 
-# Schemas update (change schemas to setup.py before next update)
-# -e ./schemas/dpdhl
+# Carrier Extentions modules
+-e ./modules/sdk
+-e ./modules/connectors/allied_express
+-e ./modules/connectors/allied_express_local
+-e ./modules/connectors/amazon_shipping
+-e ./modules/connectors/aramex
+-e ./modules/connectors/asendia_us
+-e ./modules/connectors/australiapost
+-e ./modules/connectors/boxknight
+-e ./modules/connectors/bpost
+-e ./modules/connectors/canadapost
+-e ./modules/connectors/canpar
+-e ./modules/connectors/chronopost
+-e ./modules/connectors/colissimo
+-e ./modules/connectors/dhl_express
+-e ./modules/connectors/dhl_parcel_de
+-e ./modules/connectors/dhl_poland
+-e ./modules/connectors/dhl_universal
+-e ./modules/connectors/dicom
+-e ./modules/connectors/dpd
+-e ./modules/connectors/dpdhl
+-e ./modules/connectors/fedex
+-e ./modules/connectors/fedex_ws
+-e ./modules/connectors/generic
+-e ./modules/connectors/geodis
+-e ./modules/connectors/laposte
+-e ./modules/connectors/nationex
+-e ./modules/connectors/purolator
+-e ./modules/connectors/roadie
+-e ./modules/connectors/royalmail
+-e ./modules/connectors/sendle
+-e ./modules/connectors/tge
+-e ./modules/connectors/tnt
+-e ./modules/connectors/ups
+-e ./modules/connectors/usps
+-e ./modules/connectors/usps_international
 
-# Carrier Extentions in Development
-# -e ./sdk/core
-# -e ./sdk/extensions/generic
-# -e ./sdk/extensions/amazon_mws
-# -e ./sdk/extensions/aramex
-# -e ./sdk/extensions/australiapost
-# -e ./sdk/extensions/boxknight
-# -e ./sdk/extensions/canadapost
-# -e ./sdk/extensions/canpar
-# -e ./sdk/extensions/chronopost
-# -e ./sdk/extensions/dhl_express
-# -e ./sdk/extensions/dhl_poland
-# -e ./sdk/extensions/dhl_universal
-# -e ./sdk/extensions/dicom
-# -e ./sdk/extensions/dpd
-# -e ./sdk/extensions/dpdhl
-# -e ./sdk/extensions/fedex
-# -e ./sdk/extensions/geodis
-# -e ./sdk/extensions/laposte
-# -e ./sdk/extensions/nationex
-# -e ./sdk/extensions/purolator
-# -e ./sdk/extensions/roadie
-# -e ./sdk/extensions/royalmail
-# -e ./sdk/extensions/sendle
-# -e ./sdk/extensions/sf_express
-# -e ./sdk/extensions/tnt
-# -e ./sdk/extensions/ups
-# -e ./sdk/extensions/usps
-# -e ./sdk/extensions/usps_international
-# -e ./sdk/extensions/yanwen
-# -e ./sdk/extensions/yunexpress
-
-# Carrier Hub Extentions in Development
-# -e ./sdk/vendors/easypost
-# -e ./sdk/vendors/eshipper
-# -e ./sdk/vendors/freightcom
-
-
-karrio
-karrio.generic
-karrio.amazon-mws
-karrio.aramex
-karrio.australiapost
-karrio.boxknight
-karrio.canadapost
-karrio.canpar
-karrio.chronopost
-karrio.dhl-express
-karrio.dhl-poland
-karrio.dhl-universal
-karrio.dicom
-karrio.dpd
-karrio.dpdhl
-karrio.fedex
-karrio.geodis
-karrio.laposte
-karrio.nationex
-karrio.purolator
-karrio.roadie
-karrio.royalmail
-karrio.sendle
-karrio.sf-express
-karrio.tnt
-karrio.ups
-karrio.usps
-karrio.usps-international
-karrio.yanwen
-karrio.yunexpress
-
-karrio.easypost
-karrio.eshipper
-karrio.freightcom
+-e ./modules/connectors/easypost
+-e ./modules/connectors/eshipper
+-e ./modules/connectors/freightcom
+-e ./modules/connectors/locate2u
+-e ./modules/connectors/zoom2u
 
 
-# karrio server core modules
--e ./server/modules/iam
--e ./server/modules/core
--e ./server/modules/graph
--e ./server/main
--e ./server/modules/apps
--e ./server/modules/data
--e ./server/modules/events
--e ./server/modules/manager
--e ./server/modules/orders
--e ./server/modules/proxy
--e ./server/modules/pricing
-# -e ./server/modules/documents
+# karrio server modules
+-e ./modules/core
+-e ./apps/api
+-e ./modules/graph
+-e ./modules/admin
+-e ./modules/apps
+-e ./modules/data
+-e ./modules/events
+-e ./modules/manager
+-e ./modules/orders
+-e ./modules/proxy
+-e ./modules/pricing
+-e ./modules/documents
